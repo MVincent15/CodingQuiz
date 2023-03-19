@@ -4,16 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Coding Quiz</title>
     <link rel="stylesheet" href="./assets/css/reset.css"/>
     <link rel="stylesheet" href="./assets/css/style.css"/>
 </head>
 <body>
     <header>
-
+        <nav>
+            <a id="view-high-scores" href="#high-scores">View High Scores</a>
+            <section id="time-text">Time:<span id="timer">0</span></section>
+        </nav>
     </header>
     <main>
-
+        <!--sections for the start quiz-->
+        <section id="start-quiz" class="show">
+            <h1>Coding Quiz Challenge</h1>
+            <p>Try to anwer the following code-related questions within the time limit. Keep in mind that incorrect answers will oenalize your score/time by ten seconds!</p>
+            <button id="start-quiz-button">Start Quiz</button>
+        </section>
+        <!--section for the view high score page link-->
+        <section id="high-scores" class="hide">
+            <h1>High Scores</h1>
+            <p id="high-scores-saved"></p>
+            <button>Go back</button>
+            <button>Clear High Scores</button>
+        </section>
+        <!--this will be the pages for the questions-->
+        <section id="questions-page" class="hide">
+            <h1></h1>
+        </section>
+        <!--section for the final page-->
+        <section is="final-page" class="hide">
+            <h1>All Done!</h1>
+            <p>Your Final Score is <span id="score">0</span>.</p>
+            <Form id="send-score">
+                 <p>Enter initials:
+                <input type="text" id="initials">
+                </p>
+                <button type="submit"Submit></button>
+        </section>
     </main>
     <script src="./assets/js/script.js"></script>
 </body>
